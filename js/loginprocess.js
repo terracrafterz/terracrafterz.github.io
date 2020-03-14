@@ -43,7 +43,7 @@
                 verify2();
             } else if (secNum == "69420") {
                 alert('Successful Log In!');
-                window.location.replace('index.html');
+                window.location.replace('../html/index.html');
             } else {
                 alert('Your Security Number is wrong. Please try again.');
             }
