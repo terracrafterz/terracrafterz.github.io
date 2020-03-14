@@ -1,0 +1,119 @@
+body {
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sidenav {
+    border: 2px skyblue solid;
+    padding: 0;
+    list-style-type: none;
+    width: 150px;
+    height: 110%;
+    background-color: #92FE9D;
+    position: fixed;
+    left: -12%;
+    top: -17px;
+    overflow: auto;
+    transition: 0.25s;
+    z-index: 1;
+}
+
+.sidenav a {
+    display: block;
+    color: #196619;
+    position: relative;
+    top: 34px;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: 0.50s;
+}
+
+.sidenav a.active {
+    background-color: #02e319;
+}
+
+.sidenav a:hover {
+    color: white;
+    background-color: lightslategray;
+}
+
+.opennav {
+    border: 2px skyblue solid;
+    float: left;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #1aff1a;
+    color: #093;
+    font-size: 15px;
+    height: 35px;
+    width: 35px;
+    font-weight: bold;
+    transition: 0.50s;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.header {
+    text-align: center;
+    border: 2px #33cc33 solid;
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+    height: 50px;
+    position: absolute;
+    top: 120px;
+    left: 400px;
+    right: 400px;
+}
+
+.headerText {
+    color: seagreen;
+    font-weight: bold;
+    position: relative;
+    bottom: 15px;
+}
+
+.content {
+    border: 5px solid;
+    border-image: linear-gradient(90deg, #92FE9D 0%, #00C9FF 100%);
+    border-image-slice: 2;
+    position: absolute;
+    top: 200px;
+    left: 250px;
+    right: 250px;
+    height: 1000px;
+}
+
+.pic1 {
+    border: 1px gray solid;
+    position: relative;
+    float: right;
+    width: 250px;
+    height: 250px;
+    right: 20px;
+    top: 20px;
+}
+
+.persons {
+    border-radius: 50px;
+    z-index: 1;
+    height: 90px;
+    width: 90px;
+    transition: .20s;
+    border: 3px lightgreen solid;
+    margin: 40px;
+    filter: grayscale(0.75);
+    transition: 0.25s;
+}
+
+.persons:hover {
+    border: 3px green dotted;
+    filter: grayscale(0);
+}
+
+.post {
+    height: 500px;
+    margin: 5px;
+    border: 5px solid;
+    border-image: linear-gradient(45deg, seagreen 0%, skyblue 100%);
+    border-image-slice: 1;
+} 

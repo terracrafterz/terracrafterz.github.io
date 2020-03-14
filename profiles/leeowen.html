@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Snapshots</title>
+    <link rel="icon" href="../images/icon_ju6_icon.ico">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/opennav.js"> </script>
+    <script>
+        function zoomimage() {
+            document.getElementById('pfp').style.width = "730px";
+            document.getElementById('pfp').style.height = "730px";
+            document.getElementById('pfp').style.borderRadius = "0";
+            document.getElementById('imagezoom').setAttribute('onclick', 'zoomout()');
+            document.getElementById('imagezoom').setAttribute('value', 'Zoom Out');
+            document.getElementById('personname').style.marginTop = "740px";
+            document.getElementById('content').style.height = "1300px";
+        }
+
+        function zoomout() {
+            document.getElementById('imagezoom').setAttribute('onclick', 'zoomimage()');
+            document.getElementById('imagezoom').setAttribute('value', 'Zoom In');
+            document.getElementById('pfp').style.width = "150px";
+            document.getElementById('pfp').style.height = "150px";
+            document.getElementById('pfp').style.borderRadius = "150px";
+            document.getElementById('personname').style.marginTop = "30px";
+            document.getElementById('content').style.height = "600px";
+        }
+    </script>
+    <style>
+        .content {
+            height: 600px;
+        }
+
+        #pfp {
+            border-radius: 150px;
+            border: 2px lime solid;
+            position: relative;
+            top: 5px;
+            left: 5px;
+            float: left;
+            z-index: 1;
+            transition: 1s;
+            width: 150px;
+        }
+
+        .buttonzoom {
+            position: absolute;
+            left: 175px;
+            top: 15px;
+            width: 75px;
+            border-image: linear-gradient(90deg, #92FE9D 0%, #00C9FF 100%);
+            border-image-slice: 2;
+            background-color: springgreen;
+        }
+
+        .personname {
+            position: relative;
+            text-align: center;
+            color: darkolivegreen;
+            float: none;
+            margin-top: 30px;
+            transition: 0.75s;
+            border: 5px solid;
+            border-image: linear-gradient(135deg, rgba(0, 108, 104, 1) 0%, rgba(180, 255, 156, 1) 100%);
+            border-image-slice: 1;
+        }
+
+        .textcontent {
+            border: 5px solid;
+            border-image: linear-gradient(135deg, rgba(0, 108, 104, 1) 0%, rgba(180, 255, 156, 1) 100%);
+            margin-top: 60px;
+            border-image-slice: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="opennav()" class="opennav" id="opennav">+</button>
+    <ul class="sidenav" id="sidenav">
+        <li><a href="../html/index.html">Home</a></li>
+        <li><a href="../html/about.html" class="active">About</a></li>
+        <li><a href="../html/info.html">Info</a></li>
+        <li><a href="../html/contact.html">Contact Us</a></li>
+    </ul>
+    <input class="buttonzoom" type="button" onclick="zoomimage()" value="Zoom In" id="imagezoom">
+    <input class="buttonzoom" type="button" onclick="window.location.assign('../html/about.html')"
+        style="top:50px; left:75px; width:175px;" value="Return to the About page.">
+    <div class="content" id="content" style="top:15px; padding:5px;">
+        <img id="pfp" src="../images/88984815_134097567976588_7699144356036345856_n.jpg" alt="leeowen" width="150px"
+            height="150px">
+        <div id="personname" class="personname">
+            <h1 style="font-size: 40px;">Leeowen (Lee Owen Mutuc)</h1>
+        </div>
+        <div class="textcontent">
+            <p class="person-info">
+                <ul>
+                    <li> Want to be a bussiness owner some day
+                    <li> Love music
+                    <li> Love to play basketball
+                    <li> Love to eat
+                    <li> Roadtrip lover
+                    <li> Love netflix HAHA
+                    <li> Dancer lover HAHAHA
+                    <li> Love to play a SOFT BALL
+                    <li> Like to go any where Gala goals
+                    <li> family lover
+                    <li> Want to be a doctor
+                    <li> Love more play
+                </ul>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

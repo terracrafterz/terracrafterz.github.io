@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Snapshots</title>
+    <link rel="icon" href="../images/icon_ju6_icon.ico">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/opennav.js"> </script>
+    <style>
+        #loadprogress {
+            height: 10px;
+            background-color: lightgray;
+            position: absolute;
+            left: 250px;
+            right: 250px;
+            top: 580px;
+        }
+
+        #loadbar {
+            width: 0%;
+            height: 10px;
+            background: green;
+            text-align: center;
+            font-size: 10px;
+            color: gold;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="../js/loadbarprogress.js"> </script>
+    <button onclick="opennav()" class="opennav" id="opennav">+</button>
+    <ul class="sidenav" id="sidenav">
+        <li><a href="../html/index.html">Home</a></li>
+        <li><a href="../html/about.html" class="active">About</a></li>
+        <li><a href="../html/info.html">Info</a></li>
+        <li><a href="../html/contact.html">Contact Us</a></li>
+    </ul>
+    <div class="header">
+        <h1 class="headerText">Meet The Team!</h1>
+    </div>
+    <div class="content" style="height:370px;">
+        <img class="persons" src="../images/limSP.jpg" onclick="limSP()">
+        <img class="persons" src="../images/75587487_2204908362943075_93303182343536640_n.jpg" onclick="jaNaNaNa()">
+        <img class="persons" src="../images/86621788_194150378339685_6579208797263233024_o.jpg" onclick="perper()">
+        <img class="persons" src="../images/88984815_134097567976588_7699144356036345856_n.jpg" onclick="leeowen()">
+        <img class="persons" src="../images/88253719_2596562840665562_1697797660120973312_n.jpg" onclick="ames()">
+        <img class="persons" src="../images/76778182_181991019590715_4812110405302222848_o.jpg" onclick="arvin()">
+        <img class="persons" src="../images/82215628_169914354071336_887362212111319040_n.jpg" onclick="manesca()">
+    </div>
+    <div id="loadprogress">
+        <div id="loadbar"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+body {
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logincontent {
+    border: 2px seagreen solid;
+    border-radius: 10px;
+    background-color: skyblue;
+    text-align: center;
+    transition: 0.50s;
+    opacity: 25%;
+}
+
+.logincontent:focus {
+    border-color: blue;
+    background-color: lightblue;
+    opacity: 100%;
+}
+
+.content,
+.header {
+    padding: 10px 10px;
+    text-align: center;
+    color: seagreen;
+    font-size: 20px;
+    font-weight: bold;
+    border: 5px solid;
+    border-image: linear-gradient(90deg, #92FE9D 0%, #00C9FF 100%);
+    border-image-slice: 4;
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+    height: 130px;
+    position: absolute;
+    top: 200px;
+    left: 450px;
+    right: 450px;
+}
+
+.header {
+    top: 135px;
+    padding: 0%;
+    height: 60px;
+    font-size: 20px;
+    padding: 0;
+    border-width: 0;
+    background: none;
+}
+
+.button1 {
+    border: 2px green solid;
+    width: 175px;
+    background-color: lightblue;
+    border-radius: 10px;
+    position: relative;
+    top: 18px;
+}

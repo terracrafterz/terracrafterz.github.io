@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Snapshots</title>
+    <link rel="icon" href="../images/icon_ju6_icon.ico">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/opennav.js"> </script>
+    <script src="../js/jQuery.min.js"></script>
+    <style>
+        dd {
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="opennav()" class="opennav" id="opennav">+</button>
+    <ul class="sidenav" id="sidenav">
+        <li><a href="../html/index.html">Home</a></li>
+        <li><a href="../html/about.html">About</a></li>
+        <li><a href="../html/info.html" class="active">Info</a></li>
+        <li><a href="../html/contact.html">Contact Us</a></li>
+    </ul>
+    <div class="header">
+        <h1 class="headerText">Information</h1>
+    </div>
+    <div class="content">
+        <h2 style="margin-left: 10px;">Frequently Asked Questions:</h2>
+        <dl style="margin-left:10px">
+            <dt>Q: Who's the Group Leader?</dt>
+            <dd>A: Stephen Lim</dd> <br>
+            <dt>Q: Who are the members?</dt>
+            <dd>A: Amboy, Remorta, Villanueva, Manesca, Pacquiao, and Mutuc </dd> <br>
+            <dt>Q: What is this?</dt>
+            <dd>A: A mock-up version of a social media page, more or less.</dd> <br>
+            <dt>Q: How long did it take to finish this?</dt>
+            <dd>A: A little over 3 weeks</dd><br>
+            <dt>Q: When was this page considered finished?</dt>
+            <dd>A: Tuesday, March 3</dd><br>
+            <dt>Q: How much did the members help?</dt>
+            <dd>A: Not a lot on the coding side, more on the design side tho...</dd><br>
+            <dt class="reveal">Reveal Answers</dt>
+        </dl>
+    </div>
+    <script>
+        $(function () {
+            $('.reveal').click(function () {
+                $('dd').css({
+                    'opacity': '100%'
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
